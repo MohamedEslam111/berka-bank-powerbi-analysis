@@ -19,8 +19,8 @@ This project analyzes the **Berka Bank dataset** (a well-known real-world Czech 
 
 The goal was to build a full, multi-page **Power BI dashboard** that turns raw relational banking data into clear, decision-ready KPIs — helping stakeholders understand client behavior, loan performance, transaction volume, and regional trends across the bank's operations.
 
-**Dataset source:** Berka Bank Dataset — Kaggle
-**Tools used:** Power BI, Power Query, DAX, Excel
+- **Dataset source:** Berka Bank Dataset — Kaggle
+- **Tools used:** Power BI, Power Query, DAX, Excel
 
 ---
 
@@ -48,8 +48,8 @@ A summary landing page combining the top KPIs from every section of the bank's o
 - **Total Transaction Amount:** 6bn
 - **Total Orders:** 6K
 - **Total Cards:** 892
-- Visuals: Top 10 cities by loan amount, total accounts by region, cards by type, transaction trend by year, loans by status
-- Filters: Region, Card Type, Status, Transaction Type, City, Gender
+- **Visuals:** Top 10 cities by loan amount, total accounts by region, cards by type, transaction trend by year, loans by status
+- **Filters:** Region, Card Type, Status, Transaction Type, City, Gender
 
 ### 2️⃣ Transaction
 Deep dive into transaction volume, type, and regional distribution.
@@ -57,8 +57,8 @@ Deep dive into transaction volume, type, and regional distribution.
 - **Total Transaction Amount:** 6bn
 - **Average Transaction Amount:** 6K
 - **Unique Accounts:** 5K
-- Visuals: Transaction amount trend by year, transaction count by type, transaction count by year, transactions by operation type, transaction amount by type, transactions by region & city
-- Filters: Region, Date, Transaction Type, Operation, Bank, Purpose
+- **Visuals:** Transaction amount trend by year, transaction count by type, transaction count by year, transactions by operation type, transaction amount by type, transactions by region & city
+- **Filters:** Region, Date, Transaction Type, Operation, Bank, Purpose
 
 ### 3️⃣ Clients
 Client demographics and growth over time.
@@ -66,8 +66,8 @@ Client demographics and growth over time.
 - **Average Client Age:** 73
 - **Total Female Clients:** 2.6K
 - **Total Male Clients:** 2.7K
-- Visuals: Clients by gender, clients by city, clients by age group, clients by birth year, client growth by year
-- Filters: Region, Date, Gender
+- **Visuals:** Clients by gender, clients by city, clients by age group, clients by birth year, client growth by year
+- **Filters:** Region, Date, Gender
 
 ### 4️⃣ Loan
 Loan performance, risk status, and geographic breakdown.
@@ -75,21 +75,21 @@ Loan performance, risk status, and geographic breakdown.
 - **Total Loan Amount:** 103M
 - **Average Loan Amount:** 151.41K
 - **Active Loan Amount:** 448
-- Visuals: Loan amount by status, top 10 cities by loan count, loans by status, loan count by year, top 10 cities by loan amount, loan amount by year
-- Filters: Status, Date, City
+- **Visuals:** Loan amount by status, top 10 cities by loan count, loans by status, loan count by year, top 10 cities by loan amount, loan amount by year
+- **Filters:** Status, Date, City
 
 ### 5️⃣ Accounts
 Account distribution and activity frequency.
 - **Total Accounts:** 4.5K
-- Visuals: Top 10 cities by accounts, accounts by frequency, account growth by year
-- Filters: Frequency, Date, City
+- **Visuals:** Top 10 cities by accounts, accounts by frequency, account growth by year
+- **Filters:** Frequency, Date, City
 
 ### 6️⃣ Card
 Card issuance and type distribution.
 - **Total Cards:** 892
 - **Card Types:** 3 (Classic, Junior, Gold)
-- Visuals: Top 10 cities by cards, cards by year, cards by type, cards by issue date
-- Filters: Card Type, Date, City
+- **Visuals:** Top 10 cities by cards, cards by year, cards by type, cards by issue date
+- **Filters:** Card Type, Date, City
 
 ### 7️⃣ Order
 Order volume, value, and regional performance.
@@ -97,19 +97,19 @@ Order volume, value, and regional performance.
 - **Average Order Amount:** 3.28K
 - **Active Accounts with Orders:** 4K
 - **Total Order Amount:** 21.23M
-- Visuals: Top 10 cities by orders, orders by region, order trend by year, orders by type
-- Filters: Bank, Date, City, Region, Order Type
+- **Visuals:** Top 10 cities by orders, orders by region, order trend by year, orders by type
+- **Filters:** Bank, Date, City, Region, Order Type
 
 ### 8️⃣ Details
 A cross-tab matrix view for granular, year-over-year regional analysis — combining orders, transactions, and loans in a single drillable table (1993–1998, by region).
-- Metrics: Total Orders, Total Orders Amount, Total Transactions Count, Total Transaction Amount, Total Loans, Total Loan Amount
-- Filters: Loan Status, Date, City, Region, Order Type, Card Type
+- **Metrics:** Total Orders, Total Orders Amount, Total Transactions Count, Total Transaction Amount, Total Loans, Total Loan Amount
+- **Filters:** Loan Status, Date, City, Region, Order Type, Card Type
 
 ---
 
 ## 🔑 Key Insights
 
-- Prague (Hl.m. Praha) consistently leads across almost every metric — clients, accounts, cards, loans, and orders — confirming it as the bank's primary hub.
+- **Prague (Hl.m. Praha)** consistently leads across almost every metric — clients, accounts, cards, loans, and orders — confirming it as the bank's primary hub.
 - Total transaction volume grew steadily year over year, from under 0.2bn in 1993 to nearly 2bn by 1998.
 - The vast majority of loans (67%) fall under status "C" (running, no issues), indicating a healthy loan portfolio overall.
 - Card adoption is dominated by the **Classic** card type (74%), with **Gold** cards making up the smallest share.
@@ -129,4 +129,26 @@ A cross-tab matrix view for granular, year-over-year regional analysis — combi
 
 ## 📷 Preview
 
-*(Add exported screenshots or a GIF walkthrough of the dashboard here for a quick visual preview.)*
+### 1️⃣ Overview
+![Overview Page](Images/01-overview.jpg)
+
+### 2️⃣ Transactions
+![Transaction Page](Images/02-transaction.jpg)
+
+### 3️⃣ Clients
+![Clients Page](Images/03-clients.jpg)
+
+### 4️⃣ Loans
+![Loan Page](Images/04-loan.jpg)
+
+### 5️⃣ Accounts
+![Accounts Page](Images/05-accounts.jpg)
+
+### 6️⃣ Cards
+![Card Page](Images/06-card.jpg)
+
+### 7️⃣ Orders
+![Order Page](Images/07-order.jpg)
+
+### 8️⃣ Details Matrix
+![Details Page](Images/08-details.jpg)
