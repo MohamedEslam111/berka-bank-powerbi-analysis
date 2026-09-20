@@ -28,8 +28,8 @@ The goal was to build a full, multi-page **Power BI dashboard** that turns raw r
 
 The dashboard is built on a **star-schema data model** with multiple fact and dimension tables, connected through relationships in Power BI:
 
-- **Fact tables:** `loan fact`, `order fact`, `trans fact`, `card fact`
-- **Dimension tables:** `client dim`, `account dim`, `district dim`, `disp dim`, `Date Dim`
+- **Fact tables:** `loan fact`, `order fact`, `trans fact`
+- **Dimension tables:** `client dim`, `account dim`, `district dim`, `disp dim`, `card dim`, `Date Dim`
 - Data was cleaned and transformed using **Power Query** (handling missing values, renaming/typing columns, building relationships) before modeling and visualization.
 
 ---
@@ -143,4 +143,3 @@ BerkaBankProject/
 │   ├── 07-order.jpg
 │   └── 08-details.jpg
 └── README.md                            # Project documentation & overview
-```
