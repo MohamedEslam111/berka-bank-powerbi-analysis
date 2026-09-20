@@ -20,7 +20,7 @@ This project analyzes the **Berka Bank dataset** (a well-known real-world Czech 
 The goal was to build a full, multi-page **Power BI dashboard** that turns raw relational banking data into clear, decision-ready KPIs — helping stakeholders understand client behavior, loan performance, transaction volume, and regional trends across the bank's operations.
 
 - **Dataset source:** Berka Bank Dataset — Kaggle
-- **Tools used:** Power BI, Power Query, DAX, Excel
+- **Tools used:** Power BI Desktop, Power Query (M), DAX, Microsoft Excel
 
 ---
 
@@ -36,7 +36,7 @@ The dashboard is built on a **star-schema data model** with multiple fact and di
 
 ## 📊 Dashboard Pages & KPIs
 
-The report contains **8 pages**, each focused on a specific business area:
+The report contains **7 pages**, each focused on a specific business area:
 
 ### 1️⃣ Overview
 A summary landing page combining the top KPIs from every section of the bank's operations.
@@ -49,7 +49,7 @@ A summary landing page combining the top KPIs from every section of the bank's o
 - **Total Orders:** 6K
 - **Total Cards:** 892
 - **Visuals:** Top 10 cities by loan amount, total accounts by region, cards by type, transaction trend by year, loans by status
-- **Filters:** Region, Card Type, Status, Transaction Type, City, Gender
+- **Filters:** Region, Date, Card Type, Status, Type trans, City, Gender
 
 ### 2️⃣ Transaction
 Deep dive into transaction volume, type, and regional distribution.
@@ -57,8 +57,8 @@ Deep dive into transaction volume, type, and regional distribution.
 - **Total Transaction Amount:** 6bn
 - **Average Transaction Amount:** 6K
 - **Unique Accounts:** 5K
-- **Visuals:** Transaction amount trend by year, transaction count by type, transaction count by year, transactions by operation type, transaction amount by type, transactions by region & city
-- **Filters:** Region, Date, Transaction Type, Operation, Bank, Purpose
+- **Visuals:** Total transaction amount by year, total transactions count by type, total transaction count by year, transaction by operation, transaction amount by type, total transaction by region and city
+- **Filters:** Region, Date, Type trans, Operation, Bank, Purpose
 
 ### 3️⃣ Clients
 Client demographics and growth over time.
@@ -66,7 +66,7 @@ Client demographics and growth over time.
 - **Average Client Age:** 45
 - **Total Female Clients:** 2.6K
 - **Total Male Clients:** 2.7K
-- **Visuals:** Clients by gender, clients by city, clients by age group, clients by birth year, client growth by year
+- **Visuals:** Total clients by gender (51% M / 49% F), number of clients by city, clients by age group, total clients by birth year, total clients by year
 - **Filters:** Region, Date, Gender
 
 ### 4️⃣ Loan
@@ -75,55 +75,49 @@ Loan performance, risk status, and geographic breakdown.
 - **Total Loan Amount:** 103M
 - **Average Loan Amount:** 151.41K
 - **Active Loan Amount:** 448
-- **Visuals:** Loan amount by status, top 10 cities by loan count, loans by status, loan count by year, top 10 cities by loan amount, loan amount by year
+- **Visuals:** Loans amount by status (67% C, 18% D, 11% A, 4% B), top 10 city by loans count, total loans by status, total loans count by year, top 10 city by loans amount, total loans amount by year
 - **Filters:** Status, Date, City
 
 ### 5️⃣ Accounts
 Account distribution and activity frequency.
 - **Total Accounts:** 4.5K
-- **Visuals:** Top 10 cities by accounts, accounts by frequency, account growth by year
+- **Visuals:** Top 10 city by accounts, accounts by frequency, active accounts by year
 - **Filters:** Frequency, Date, City
 
 ### 6️⃣ Card
 Card issuance and type distribution.
 - **Total Cards:** 892
-- **Card Types:** 3 (Classic, Junior, Gold)
-- **Visuals:** Top 10 cities by cards, cards by year, cards by type, cards by issue date
-- **Filters:** Card Type, Date, City
+- **Card Types:** 3
+- **Visuals:** Top 10 city by cards, total cards by type (74% Classic, 16% Junior, 10% Gold), total cards by issued year
+- **Filters:** Type Cards, Date, City
 
 ### 7️⃣ Order
 Order volume, value, and regional performance.
 - **Total Orders:** 6K
 - **Average Order Amount:** 3.28K
-- **Active Accounts with Orders:** 4K
+- **Active Accounts Order:** 4K
 - **Total Order Amount:** 21.23M
-- **Visuals:** Top 10 cities by orders, orders by region, order trend by year, orders by type
+- **Visuals:** Top 10 city by orders, orders by region, total orders by year, total orders by type
 - **Filters:** Bank, Date, City, Region, Order Type
-
-### 8️⃣ Details
-A cross-tab matrix view for granular, year-over-year regional analysis — combining orders, transactions, and loans in a single drillable table (1993–1998, by region).
-- **Metrics:** Total Orders, Total Orders Amount, Total Transactions Count, Total Transaction Amount, Total Loans, Total Loan Amount
-- **Filters:** Loan Status, Date, City, Region, Order Type, Card Type
 
 ---
 
 ## 🔑 Key Insights
 
 - **Prague (Hl.m. Praha)** consistently leads across almost every metric — clients, accounts, cards, loans, and orders — confirming it as the bank's primary hub.
-- Total transaction volume grew steadily year over year, from under 0.2bn in 1993 to nearly 2bn by 1998.
+- Total transaction volume grew steadily year over year, from 0.20bn in 1993 to 1.89bn in 1998.
 - The vast majority of loans (67%) fall under status "C" (running, no issues), indicating a healthy loan portfolio overall.
-- Card adoption is dominated by the **Classic** card type (74%), with **Gold** cards making up the smallest share.
+- Card adoption is dominated by the **Classic** card type (74%), followed by **Junior** (16%) and **Gold** (10%).
 - Client base is nearly evenly split by gender (51% male / 49% female), with an average client age of 45.
 
 ---
 
-## 🛠️ Skills Demonstrated
+## 🛠️ Skills & Tools Demonstrated
 
-- Data modeling with star-schema relationships across multiple fact/dimension tables
-- Data cleaning & transformation using Power Query
-- DAX measures for KPIs (totals, averages, YoY trends)
-- Interactive filtering, drill-through, and cross-report filtering
-- Dashboard design for multi-page, business-focused storytelling
+- **Power BI Desktop:** Star-schema data modeling, interactive filtering, multi-page report architecture
+- **Power Query (M):** ETL processes, data cleaning, translation, and custom transformation
+- **DAX:** Custom measures for KPIs, totals, averages, and dynamic analysis
+- **Data Storytelling:** Structured executive dashboard layout focused on business decision-making
 
 ---
 
@@ -131,15 +125,18 @@ A cross-tab matrix view for granular, year-over-year regional analysis — combi
 
 ```text
 BerkaBankProject/
+│
 ├── Documentation/
 │   └── Business_Questions_Insights.md   # Detailed business insights, Q&A, and recommendations
-├── Images/                              # Dashboard preview images for all 8 pages
+│
+├── Images/                              # Dashboard preview screenshots (7 pages)
 │   ├── 01-overview.jpg
 │   ├── 02-transaction.jpg
 │   ├── 03-clients.jpg
 │   ├── 04-loan.jpg
 │   ├── 05-accounts.jpg
 │   ├── 06-card.jpg
-│   ├── 07-order.jpg
-│   └── 08-details.jpg
+│   └── 07-order.jpg
+│
+├── Birka Analysis111.pbix               # Main Power BI dashboard file
 └── README.md                            # Project documentation & overview
