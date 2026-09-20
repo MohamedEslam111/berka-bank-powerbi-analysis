@@ -41,7 +41,7 @@ The report contains **7 pages**, each focused on a specific business area:
 ### 1️⃣ Overview
 A summary landing page combining the top KPIs from every section of the bank's operations.
 
-![Overview](Images/01-overview.jpg)
+![Overview](Images/01-overview%20.jpg)
 
 - **Total Clients:** 5.4K
 - **Total Accounts:** 4.5K
@@ -57,7 +57,7 @@ A summary landing page combining the top KPIs from every section of the bank's o
 ### 2️⃣ Transaction
 Deep dive into transaction volume, type, and regional distribution.
 
-![Transaction](Images/02-transaction.jpg)
+![Transaction](Images/02-transaction%20.jpg)
 
 - **Total Transaction Count:** 1M
 - **Total Transaction Amount:** 6bn
@@ -69,7 +69,7 @@ Deep dive into transaction volume, type, and regional distribution.
 ### 3️⃣ Clients
 Client demographics and growth over time.
 
-![Clients](Images/03-clients.jpg)
+![Clients](Images/03-clients%20.jpg)
 
 - **Total Clients:** 5.4K
 - **Average Client Age:** 45
@@ -81,7 +81,7 @@ Client demographics and growth over time.
 ### 4️⃣ Loan
 Loan performance, risk status, and geographic breakdown.
 
-![Loan](Images/04-loan.jpg)
+![Loan](Images/04-loan%20.jpg)
 
 - **Total Loans:** 682
 - **Total Loan Amount:** 103M
@@ -93,7 +93,7 @@ Loan performance, risk status, and geographic breakdown.
 ### 5️⃣ Accounts
 Account distribution and activity frequency.
 
-![Accounts](Images/05-accounts.jpg)
+![Accounts](Images/05-accounts%20.jpg)
 
 - **Total Accounts:** 4.5K
 - **Visuals:** Top 10 city by accounts, accounts by frequency, active accounts by year
@@ -102,7 +102,7 @@ Account distribution and activity frequency.
 ### 6️⃣ Card
 Card issuance and type distribution.
 
-![Card](Images/06-card.jpg)
+![Card](Images/06-card%20.jpg)
 
 - **Total Cards:** 892
 - **Card Types:** 3
@@ -112,7 +112,7 @@ Card issuance and type distribution.
 ### 7️⃣ Order
 Order volume, value, and regional performance.
 
-![Order](Images/07-order.jpg)
+![Order](Images/07-order%20.jpg)
 
 - **Total Orders:** 6K
 - **Average Order Amount:** 3.28K
@@ -151,13 +151,13 @@ BerkaBankProject/
 │   └── Business_Questions_Insights.md   # Detailed business insights, Q&A, and recommendations
 │
 ├── Images/                              # Dashboard preview screenshots (7 pages)
-│   ├── 01-overview.jpg
-│   ├── 02-transaction.jpg
-│   ├── 03-clients.jpg
-│   ├── 04-loan.jpg
-│   ├── 05-accounts.jpg
-│   ├── 06-card.jpg
-│   └── 07-order.jpg
+│   ├── 01-overview .jpg
+│   ├── 02-transaction .jpg
+│   ├── 03-clients .jpg
+│   ├── 04-loan .jpg
+│   ├── 05-accounts .jpg
+│   ├── 06-card .jpg
+│   └── 07-order .jpg
 │
 ├── Birka Analysis111.pbix               # Main Power BI dashboard file
 └── README.md                            # Project documentation & overview
