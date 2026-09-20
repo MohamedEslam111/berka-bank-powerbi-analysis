@@ -172,4 +172,3 @@
 5. **Dominance of Cash:** Counter cash is 60.7% of customer transactions and 76.4% of value. Cards are 1.1% and 0.29%, and card holders still withdraw the same amount of cash — card growth so far has added a channel, not replaced the costliest one.
 6. **Data Cleaning Needs:** A third of the raw transaction count (32.2%) is interest and fee postings worth 0.48% of value, so report customer transactions only, and encode the exclusion in the data model, not as a manual filter.
 7. **Proportionate Regional Spread:** Prague is proportionate on loans, accounts and population, and regional differences per account are small — resource allocation should track account base, with only east Bohemia and Brno singled out for modest, targeted pushes.
-
