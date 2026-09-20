@@ -127,34 +127,6 @@ A cross-tab matrix view for granular, year-over-year regional analysis — combi
 
 ---
 
-## 📷 Preview
-
-### 1️⃣ Overview
-![Overview Page](Images/01-overview.jpg)
-
-### 2️⃣ Transactions
-![Transaction Page](Images/02-transaction.jpg)
-
-### 3️⃣ Clients
-![Clients Page](Images/03-clients.jpg)
-
-### 4️⃣ Loans
-![Loan Page](Images/04-loan.jpg)
-
-### 5️⃣ Accounts
-![Accounts Page](Images/05-accounts.jpg)
-
-### 6️⃣ Cards
-![Card Page](Images/06-card.jpg)
-
-### 7️⃣ Orders
-![Order Page](Images/07-order.jpg)
-
-### 8️⃣ Details Matrix
-![Details Page](Images/08-details.jpg)
-
----
-
 ## 📁 Project Structure
 BerkaBankProject/
 ├── Documentation/
