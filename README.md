@@ -63,7 +63,7 @@ Deep dive into transaction volume, type, and regional distribution.
 ### 3️⃣ Clients
 Client demographics and growth over time.
 - **Total Clients:** 5.4K
-- **Average Client Age:** 73
+- **Average Client Age:** 45
 - **Total Female Clients:** 2.6K
 - **Total Male Clients:** 2.7K
 - **Visuals:** Clients by gender, clients by city, clients by age group, clients by birth year, client growth by year
@@ -113,7 +113,7 @@ A cross-tab matrix view for granular, year-over-year regional analysis — combi
 - Total transaction volume grew steadily year over year, from under 0.2bn in 1993 to nearly 2bn by 1998.
 - The vast majority of loans (67%) fall under status "C" (running, no issues), indicating a healthy loan portfolio overall.
 - Card adoption is dominated by the **Classic** card type (74%), with **Gold** cards making up the smallest share.
-- Client base is nearly evenly split by gender (51% male / 49% female), with an average client age of 73.
+- Client base is nearly evenly split by gender (51% male / 49% female), with an average client age of 45.
 
 ---
 
@@ -152,3 +152,20 @@ A cross-tab matrix view for granular, year-over-year regional analysis — combi
 
 ### 8️⃣ Details Matrix
 ![Details Page](Images/08-details.jpg)
+
+---
+
+## 📁 Project Structure
+BerkaBankProject/
+├── Documentation/
+│   └── Business_Questions_Insights.md   # Detailed business insights, Q&A, and recommendations
+├── Images/                              # Dashboard preview images for all 8 pages
+│   ├── 01-overview.jpg
+│   ├── 02-transaction.jpg
+│   ├── 03-clients.jpg
+│   ├── 04-loan.jpg
+│   ├── 05-accounts.jpg
+│   ├── 06-card.jpg
+│   ├── 07-order.jpg
+│   └── 08-details.jpg
+└── README.md                            # Project documentation & overview
