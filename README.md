@@ -40,9 +40,12 @@ The report contains **7 pages**, each focused on a specific business area:
 
 ### 1️⃣ Overview
 A summary landing page combining the top KPIs from every section of the bank's operations.
+
+![Overview](Images/01-overview.jpg)
+
 - **Total Clients:** 5.4K
 - **Total Accounts:** 4.5K
-- **Total Active Loans:** 448
+- **Total Active Loans (Status C + D):** 448
 - **Total Transaction Count:** 1M
 - **Total Loan Amount:** 103M
 - **Total Transaction Amount:** 6bn
@@ -53,6 +56,9 @@ A summary landing page combining the top KPIs from every section of the bank's o
 
 ### 2️⃣ Transaction
 Deep dive into transaction volume, type, and regional distribution.
+
+![Transaction](Images/02-transaction.jpg)
+
 - **Total Transaction Count:** 1M
 - **Total Transaction Amount:** 6bn
 - **Average Transaction Amount:** 6K
@@ -62,6 +68,9 @@ Deep dive into transaction volume, type, and regional distribution.
 
 ### 3️⃣ Clients
 Client demographics and growth over time.
+
+![Clients](Images/03-clients.jpg)
+
 - **Total Clients:** 5.4K
 - **Average Client Age:** 45
 - **Total Female Clients:** 2.6K
@@ -71,21 +80,30 @@ Client demographics and growth over time.
 
 ### 4️⃣ Loan
 Loan performance, risk status, and geographic breakdown.
+
+![Loan](Images/04-loan.jpg)
+
 - **Total Loans:** 682
 - **Total Loan Amount:** 103M
 - **Average Loan Amount:** 151.41K
-- **Active Loan Amount:** 448
-- **Visuals:** Loans amount by status (67% C, 18% D, 11% A, 4% B), top 10 city by loans count, total loans by status, total loans count by year, top 10 city by loans amount, total loans amount by year
+- **Active Loan Count (Status C + D):** 448
+- **Visuals:** Loans amount by status (67% C, 18% A, 11% D, 4% B), top 10 city by loans count, total loans by status, total loans count by year, top 10 city by loans amount, total loans amount by year
 - **Filters:** Status, Date, City
 
 ### 5️⃣ Accounts
 Account distribution and activity frequency.
+
+![Accounts](Images/05-accounts.jpg)
+
 - **Total Accounts:** 4.5K
 - **Visuals:** Top 10 city by accounts, accounts by frequency, active accounts by year
 - **Filters:** Frequency, Date, City
 
 ### 6️⃣ Card
 Card issuance and type distribution.
+
+![Card](Images/06-card.jpg)
+
 - **Total Cards:** 892
 - **Card Types:** 3
 - **Visuals:** Top 10 city by cards, total cards by type (74% Classic, 16% Junior, 10% Gold), total cards by issued year
@@ -93,6 +111,9 @@ Card issuance and type distribution.
 
 ### 7️⃣ Order
 Order volume, value, and regional performance.
+
+![Order](Images/07-order.jpg)
+
 - **Total Orders:** 6K
 - **Average Order Amount:** 3.28K
 - **Active Accounts Order:** 4K
@@ -104,9 +125,9 @@ Order volume, value, and regional performance.
 
 ## 🔑 Key Insights
 
-- **Prague (Hl.m. Praha)** consistently leads across almost every metric — clients, accounts, cards, loans, and orders — confirming it as the bank's primary hub.
-- Total transaction volume grew steadily year over year, from 0.20bn in 1993 to 1.89bn in 1998.
-- The vast majority of loans (67%) fall under status "C" (running, no issues), indicating a healthy loan portfolio overall.
+- **Prague (Hl.m. Praha)** leads in raw totals — clients (12.5%), accounts (12.3%) and loan value (12.5%) — but this closely tracks its 11.7% share of the national population. Deeper analysis (see `Business_Questions_Insights.md`) shows Prague's exposure is **proportionate, not disproportionately concentrated**; north and south Moravia are the true regional hub by account and order volume.
+- Total transaction volume grew steadily year over year, from 0.20bn in 1993 to 1.89bn in 1998, though this growth tracks the expanding account base rather than deeper per-account engagement.
+- By value, **67% of the loan book is status C** (running, no issues) and **18% is status A** (finished OK), indicating a broadly healthy portfolio. Problem loans (B + D combined) make up 15% of loan value despite being only 11% of loan count — risk is concentrated in fewer, larger loans.
 - Card adoption is dominated by the **Classic** card type (74%), followed by **Junior** (16%) and **Gold** (10%).
 - Client base is nearly evenly split by gender (51% male / 49% female), with an average client age of 45.
 
@@ -117,7 +138,7 @@ Order volume, value, and regional performance.
 - **Power BI Desktop:** Star-schema data modeling, interactive filtering, multi-page report architecture
 - **Power Query (M):** ETL processes, data cleaning, translation, and custom transformation
 - **DAX:** Custom measures for KPIs, totals, averages, and dynamic analysis
-- **Data Storytelling:** Structured executive dashboard layout focused on business decision-making
+- **Data Storytelling:** Structured executive dashboard layout focused on business decision-making, including verifying insights against raw figures before presenting them (e.g. distinguishing proportionate concentration from true regional dominance)
 
 ---
 
@@ -140,3 +161,4 @@ BerkaBankProject/
 │
 ├── Birka Analysis111.pbix               # Main Power BI dashboard file
 └── README.md                            # Project documentation & overview
+```
