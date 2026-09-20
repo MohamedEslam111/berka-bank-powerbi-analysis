@@ -128,6 +128,8 @@ A cross-tab matrix view for granular, year-over-year regional analysis — combi
 ---
 
 ## 📁 Project Structure
+
+```text
 BerkaBankProject/
 ├── Documentation/
 │   └── Business_Questions_Insights.md   # Detailed business insights, Q&A, and recommendations
@@ -141,3 +143,4 @@ BerkaBankProject/
 │   ├── 07-order.jpg
 │   └── 08-details.jpg
 └── README.md                            # Project documentation & overview
+```
